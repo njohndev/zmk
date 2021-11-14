@@ -43,6 +43,7 @@ module.exports = {
         "features/displays",
         "features/lighting",
         "features/studio",
+        "features/trackballs",
       ],
     },
     {
@@ -86,6 +87,7 @@ module.exports = {
             "keymaps/behaviors/power",
             "keymaps/behaviors/soft-off",
             "keymaps/behaviors/studio-unlock",
+            "keymaps/behaviors/trackball-pim447",
           ],
         },
         "keymaps/modifiers",

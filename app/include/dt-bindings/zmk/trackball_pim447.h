@@ -5,7 +5,7 @@
  */
 #pragma once
 
-#define PIM447_NONE   0
-#define PIM447_MOVE   1
+#define PIM447_NONE 0
+#define PIM447_MOVE 1
 #define PIM447_SCROLL 2
 #define PIM447_TOGGLE 3
