@@ -24,6 +24,21 @@ properties:
   scale-divisor:
     type: int
     default: 1
+  layer-toggle:
+    type: int
+    default: -1
+    required: false
+    description: The layer that should be toggled when the mouse is moved.
+  layer-toggle-delay-ms:
+    type: int
+    default: 250
+    required: false
+    description: How many miliseconds of mouse activity are required before the layer is toggled on.
+  layer-toggle-timeout-ms:
+    type: int
+    default: 250
+    required: false
+    description: How many miliseconds of mouse inactivity are required before the layer is toggled off again.
 
 child-binding:
   description: "Listener overrides for certain layers"
@@ -36,3 +51,4 @@ child-binding:
       type: boolean
     input-processors:
       type: phandle-array
+
