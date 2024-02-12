@@ -12,6 +12,18 @@ properties:
     required: true
   input-processors:
     type: phandle-array
+  xy-swap:
+    type: boolean
+  x-invert:
+    type: boolean
+  y-invert:
+    type: boolean
+  scale-multiplier:
+    type: int
+    default: 1
+  scale-divisor:
+    type: int
+    default: 1
 
 child-binding:
   description: "Listener overrides for certain layers"

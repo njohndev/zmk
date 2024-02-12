@@ -29,3 +29,4 @@
 #include <behaviors/studio_unlock.dtsi>
 #include <behaviors/mouse_keys.dtsi>
 #include <behaviors/trackball_pim447.dtsi>
+#include <behaviors/macros.dtsi>
