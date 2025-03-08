@@ -97,13 +97,14 @@ static int hid_listener_keycode_released(const struct zmk_keycode_state_changed 
 }
 
 int hid_listener(const zmk_event_t *eh) {
-    const struct zmk_keycode_state_changed *ev = as_zmk_keycode_state_changed(eh);
-    if (ev) {
-        if (ev->state) {
-            hid_listener_keycode_pressed(ev);
+    const struct zmk_keycode_state_changed *kc_ev = as_zmk_keycode_state_changed(eh);
+    if (kc_ev) {
+        if (kc_ev->state) {
+            hid_listener_keycode_pressed(kc_ev);
         } else {
-            hid_listener_keycode_released(ev);
+            hid_listener_keycode_released(kc_ev);
         }
+        return 0;
     }
     return 0;
 }

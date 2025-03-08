@@ -6,3 +6,5 @@ add_subdirectory_ifdef(CONFIG_EC11 ec11)
 add_subdirectory_ifdef(CONFIG_ZMK_MAX17048 max17048)
 
 add_subdirectory_ifdef(CONFIG_ZMK_SENSOR_ENCODER_MOCK encoder_mock)
+add_subdirectory_ifdef(CONFIG_ZMK_TRACKBALL_PIM447 trackball_pim447)
+

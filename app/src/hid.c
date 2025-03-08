@@ -33,6 +33,9 @@ static struct zmk_hid_mouse_report mouse_report = {
 
 #endif // IS_ENABLED(CONFIG_ZMK_POINTING)
 
+static struct zmk_hid_mouse_report mouse_report = {
+    .report_id = 4, .body = {.buttons = 0, .x = 0, .y = 0, .scroll_x = 0, .scroll_y = 0}};
+
 // Keep track of how often a modifier was pressed.
 // Only release the modifier if the count is 0.
 static int explicit_modifier_counts[8] = {0, 0, 0, 0, 0, 0, 0, 0};
