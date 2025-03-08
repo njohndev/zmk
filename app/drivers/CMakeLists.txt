@@ -5,3 +5,5 @@ add_subdirectory(gpio)
 add_subdirectory(kscan)
 add_subdirectory(sensor)
 add_subdirectory(display)
+
+# Just to trigger the workflow
