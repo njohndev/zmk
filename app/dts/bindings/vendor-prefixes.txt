@@ -1,4 +1,3 @@
 zmk	ZMK Project
 moergo	MoErgo
-
-pimoroni = "Pimoroni Ltd.";
+pimoroni	Pimoroni Ltd.
