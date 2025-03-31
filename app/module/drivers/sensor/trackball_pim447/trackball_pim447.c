@@ -129,7 +129,7 @@ static int trackball_pim447_channel_get(const struct device *dev, enum sensor_ch
 static int trackball_pim447_init(const struct device *dev) {
     struct trackball_pim447_data *data = dev->data;
 
-    data->i2c_dev = DEVICE_DT_GET(DT_NODELABEL(i2c0));
+    data->i2c_dev = DEVICE_DT_GET(DT_NODELABEL(i2c1));
     if (!device_is_ready(data->i2c_dev)) {
         LOG_ERR("Failed to get I2C device");
         return -EINVAL;
