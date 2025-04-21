@@ -13,6 +13,7 @@
             label = "PIM447_MOVE";
             mode = <PIM447_MOVE>;
             #binding-cells = <0>;
+            status = "okay";
         };
 
         /omit-if-no-ref/ pim447_scroll: behavior_trackball_pim447_scroll {
@@ -20,6 +21,7 @@
             label = "PIM447_SCROLL";
             mode = <PIM447_SCROLL>;
             #binding-cells = <0>;
+            status = "okay";
         };
 
         /omit-if-no-ref/ pim447_toggle: behavior_trackball_pim447_toggle {
@@ -27,6 +29,7 @@
             label = "PIM447_TOGGLE";
             mode = <PIM447_TOGGLE>;
             #binding-cells = <0>;
+            status = "okay";
         };
 
         /omit-if-no-ref/ pim447_move_scroll: behavior_trackball_pim447_move_scroll {
@@ -35,6 +38,7 @@
             mode = <PIM447_MOVE>;
             momentary;
             #binding-cells = <0>;
+            status = "okay";
         };
 
         /omit-if-no-ref/ pim447_scroll_move: behavior_trackball_pim447_scroll_move {
@@ -43,6 +47,7 @@
             mode = <PIM447_SCROLL>;
             momentary;
             #binding-cells = <0>;
+            status = "okay";
         };
 
         /omit-if-no-ref/ pim447_toggle_toggle: behavior_trackball_pim447_toggle_toggle {
@@ -51,6 +56,7 @@
             mode = <PIM447_TOGGLE>;
             momentary;
             #binding-cells = <0>;
+            status = "okay";
         };
     };
 };
