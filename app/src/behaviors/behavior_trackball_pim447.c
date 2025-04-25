@@ -9,6 +9,7 @@
 #include <zephyr/devicetree.h>
 #include <drivers/behavior.h>
 #include <zmk/trackball_pim447.h>
+#include <zmk/behavior.h>
 
 #if DT_HAS_COMPAT_STATUS_OKAY(DT_DRV_COMPAT)
 
@@ -50,9 +51,9 @@ static const struct behavior_driver_api behavior_trackball_pim447_driver_api = {
     static const struct config config_##n = {.mode = DT_INST_PROP(n, mode),                        \
                                              .momentary = DT_INST_PROP(n, momentary)};             \
                                                                                                    \
-    DEVICE_DT_INST_DEFINE(n, behavior_trackball_pim447_init, NULL, NULL, &config_##n, APPLICATION, \
-                          CONFIG_KERNEL_INIT_PRIORITY_DEFAULT,                                     \
-                          &behavior_trackball_pim447_driver_api);
+    BEHAVIOR_DT_INST_DEFINE(n, behavior_trackball_pim447_init, NULL, NULL, &config_##n,            \
+                            APPLICATION, CONFIG_KERNEL_INIT_PRIORITY_DEFAULT,                      \
+                            &behavior_trackball_pim447_driver_api);
 
 DT_INST_FOREACH_STATUS_OKAY(PIM447_INST)
 
