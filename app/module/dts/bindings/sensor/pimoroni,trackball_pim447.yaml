@@ -56,3 +56,8 @@ properties:
     enum:
       - 1
       - 2
+
+  sensor-layer-trigger:
+    type: boolean
+    description: >
+      A boolean property to enable the sensor layer trigger.
