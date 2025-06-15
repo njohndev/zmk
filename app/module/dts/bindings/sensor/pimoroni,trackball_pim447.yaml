@@ -56,13 +56,3 @@ properties:
     enum:
       - 1
       - 2
-
-  sensor-layer-behavior:
-    type: phandle
-    required: false
-    description: >
-      Phandle to a zmk,behavior-sensor-layer node to activate a layer when the sensor is active.
-#  sensor-layer-trigger:
-#    type: boolean
-#    description: >
-#      A boolean property to enable the sensor layer trigger.
