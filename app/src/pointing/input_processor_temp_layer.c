@@ -231,6 +231,9 @@ static int handle_event_dispatcher(const zmk_event_t *eh) {
 static int temp_layer_handle_event(const struct device *dev, struct input_event *event,
                                    uint32_t param1, uint32_t param2,
                                    struct zmk_input_processor_state *state) {
+
+		LOG_DBG("temp_layer_handle_event: got event from device %s, param1=%d, param2=%d", dev->name, param1, param2);
+
     if (param1 >= MAX_LAYERS) {
         LOG_ERR("Invalid layer index: %d", param1);
         return -EINVAL;
